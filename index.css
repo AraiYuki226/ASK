@@ -1,0 +1,99 @@
+#header{
+    background-color: rgb(199, 248, 85);
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 1;
+}
+
+#header-logo{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+#header-menu{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#header-menu li{
+    margin-right: 20px;
+}
+
+#contents-ASK{
+    text-align: right;
+
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#contents-ASK *{
+    vertical-align: baseline;
+}
+
+#contents-ASK span{
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#contents-result{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;   
+}
+
+#contents-result-table{
+    width: 100%;
+}
+
+#contents-result-table th{
+    text-align: center;
+}
+
+#ASKForm-wrapper{
+    position: fixed;    /*画面中央に固定*/
+    
+    top: 0;
+    height: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    flex-direction: column; /*ASKFormのalign-selfを活用するため*/
+    align-items: center;
+    justify-content: center;
+}
+
+#ASKForm{
+    margin-left: 40px;
+    margin-right: 40px;
+
+    position: relative;
+
+    align-self: stretch; /*横方向に広げる*/
+}
+
+#ASKForm *{
+    margin-bottom: 10px;
+}
+
+#ASKForm *:last-child{
+    margin-bottom: 0px;
+}
+
+#ASKForm-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    border: none;
+    background-color: unset;
+    color: dodgerblue;
+
+    cursor: pointer;
+}

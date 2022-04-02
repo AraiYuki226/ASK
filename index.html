@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's ASK!</title>
+        <!-- Bulmaを読み込んでおく -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <!-- index.cssを読み込んでおく -->
+        <link rel="stylesheet" href="index.css">
+        <!-- jsを使う -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- 上に表示するヘッダ -->
+        <div id="header">
+            <div id="header-logo">Lwt's ASK</div>
+            <ul id="header-menu">
+                <li>Top</li>
+                <li>About</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <!-- メイン画面 -->
+        <div id="contents">
+            <div id="contents-ASK">
+                <span>Please Ask meeeee!! →</span>
+                <button class="button is-primary is-rounded">Ask!</button>
+            </div>
+            
+            <div id="contents-result">
+                <table id="contents-result-table" class="table">
+                    <th>質問内容</th><th>結果</th>
+                    <template id="contents-result-table-tr-template">
+                        <tr>
+                            <td class="contents-result-table-resultQuestion"></td>
+                            <td><div class="contents-result-table-resultAnswer"></div></td>
+                        </tr>
+                    </template>
+                </table>
+            </div>
+        </div>
+        <!-- ポップアップ -->
+        <div id="ASKForm-wrapper">
+            <div id="ASKForm" class="box">
+                <button id="ASKForm-close" class="button is-ghost">close </button>
+                <form id="ASKForm-form">
+                    <label class="label">Please type your question!</label>
+                    <input class="input" type="text" placeholder="Text input">
+                    <button class="button is-primary" type="button">Ask!</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
